@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Agency View - CRM</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css " />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link href='packages/core/main.css' rel='stylesheet' />
+    <link href='packages/daygrid/main.css' rel='stylesheet' />
+    <link href='packages/list/main.css' rel='stylesheet' />
+    <link href='packages/timegrid/main.css' rel='stylesheet' />
+    <style>
+    #loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+    </style>
+    <!--[if lt IE 8]><!-->
+    <link rel="stylesheet" href="ie7/ie7.css">
+    <!--<![endif]-->
+    <link href="css/customCss.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 address">
+                        
+                    </div>
+                    <div class="col-sm-6 social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo_blk.png">
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse navbar-main-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">AV Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user"></i>&nbsp; Chase Catelano</a>
+                        </li>
+
+                        <li>
+                            <a href="../login.html">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <div id="page-content">
+        
+        <div class="container">
+            <div class="row">
+                    
+                    <section class="product-tab"id="dashboard">
+                            <div class="container">
+                                
+                                <div class="row">
+                                    <div id="parentVerticalTab" class="resp-vtabs hor_1">
+                                        <h2>AV Dashboard<sup>&copy;</sup></h2>
+                                        <ul class="resp-tabs-list hor_1 col-sm-3 col-md-3 col-lg-3">
+                                            <li><a href="index.html#parentVerticalTab1"><i class="fa fa-home"></i> Dashboard</a></li>                                            
+                                            <li><a href="leads.html#parentVerticalTab2"><i class="fa fa-bullseye"></i> Leads</a></li>
+                                            <li><a href="clients.html#parentVerticalTab3"> <i class="fa fa-user"></i> Clients</a></li>
+                                            <li class="resp-tab-item hor_1 resp-tab-active"><a href="calendar.html#parentVerticalTab4"><i class="fa fa-calendar"></i> Calendar</a></li>
+                                            <li><a href="commissions.html#parentVerticalTab5"><i class="fa fa-dollar"></i> Commissions</a></li>
+                                            <li><a href="email.html#parentVerticalTab6"><i class="fa fa-envelope"></i> Email</a></li>
+                                            <li><a href="agents.html#parentVerticalTab7"><i class="fa fa-user-plus"></i> Agents</a></li>
+                                            <li><a href="application.html#parentVerticalTab8"><i class="fa fa-file-text-o"></i> New Aplication</a></li>
+                                        </ul>
+                                        <div class="col-sm-8 col-md-8 col-lg-8 resp-tabs-container hor_1">
+                                            <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                                                <div class="prod-tab-content">
+                                                    <h4>
+                                                        <span class="prod-cion"><i class="fa fa-calendar"></i></span>
+                                                        Calendar
+                                                    </h4>
+                                                    <!--<iframe src="https://calendar.google.com/calendar/embed?src=dmorgan@studiodm.net&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+                                                    <div id='loading'>loading...</div>
+                                                    <div id='calendar'></div>
+                                                    
+                                                    
+                                                </div>
+                                                <!--Data-->
+                                            </div>
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+            </div>
+        </div>
+        
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+            <div class="row contact-sec">
+                <div class="col-md-5 col-lg-5">
+                    <h2></span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>2200 W Commercial Blvd<br>Fort Lauderdale, FL  
+                                <br/>Zip - 33309</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-phone"></i> 1-888-408-6913</a></li>
+                                <li><a href="#"><i class="ti-email"></i> info@myagencyview.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default">Contact Us</a>
+                </div>
+                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2">
+                    <h2><span></span></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                                <ul>
+                                        <li><i class="ti-lock"></i>SSL Secure Login</li>
+                                        <li><i class="fa fa-user"></i>AV Dashboard<sup>&copy;</sup></li>
+                                        <li><i class="fa fa-life-bouy"></i>1-888-408-6913</li>                               
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-lg-8">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        Copyright &copy; 2019 <a href="#">Agency View</a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 text-right">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src='packages/core/main.js'></script>
+    <script src='packages/interaction/main.js'></script>
+    <script src='packages/daygrid/main.js'></script>
+    <script src='packages/list/main.js'></script>
+    <script src='packages/timegrid/main.js'></script>
+    <script src='packages/google-calendar/main.js'></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+          
+    //defaultDate: '2019-08-12',
+      navLinks: true, // can click day/week names to navigate views
+      selectable: true,
+      selectMirror: true,
+      select: function(arg) {
+        var title = prompt('Event Title:');
+        if (title) {
+          calendar.addEvent({
+            title: title,
+            start: arg.start,
+            end: arg.end,
+            allDay: arg.allDay
+          })
+        }
+        calendar.unselect()
+      },
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'All Day Event',
+          start: '2019-10-07'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2019-10-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Repeating Event',
+          start: '2019-10-16T16:00:00'
+        },
+        {
+          title: 'Conference',
+          start: '2019-10-11',
+          end: '2019-10-13'
+        },
+        {
+          title: 'Meeting',
+          start: '2019-10-12T10:30:00',
+          end: '2019-10-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2019-10-12T12:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2019-10-12T14:30:00'
+        },
+        {
+          title: 'Happy Hour',
+          start: '2019-10-12T17:30:00'
+        },
+        {
+          title: 'Dinner',
+          start: '2019-10-12T20:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2019-10-28'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+          
+          </script>
+</body>
+
+</html>
